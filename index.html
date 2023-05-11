@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Тайский массаж</title>
+  </head>
+  <body>
+    <header class="header">
+      <img src="logoblackontranspare.png" alt="logo" class="logo" />
+      <nav class="navbar">
+        <ul class="navbar__list">
+            <li class="navbar__item"><a href="#О_салоне">О салоне</a></li>
+          <li class="navbar__item">
+            <a href="#Наши_специалисты">Массажисты</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#Услуги">Услуги</a>
+          </li>
+        </ul>
+      </nav>
+      <a href="#contacts" class="call-button">Контакты</a>
+    </header>
+
+    <main class="main">
+      <div class="left-side">
+        <h1 class="title1">Тайский массаж</h1>
+          <h4 class="title2">Массаж поможет насладиться здоровым образом жизни, расслабиться и почувствовать легкость.</h4>
+      </div>
+      <div class="right-side">
+        <ul class="image-list">
+          <li class="image-list__item">
+            <img src="images/images/images-1.jpeg" alt="image" class="image" width="150" height="150" />
+          </li>
+          <li class="image-list__item">
+            <img src="images/images/images-2.jpeg" alt="image" class="image" width="150" height="150"/>
+          </li>
+          <li class="image-list__item">
+            <img src="images/images/images-3.jpeg" alt="image" class="image" width="150" height="150" />
+          </li>
+          <li class="image-list__item">
+            <img src="images/images/images-4.jpg" alt="image" class="image" width="150" height="150"/>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <h1 id="О_салоне"  class="info">О салоне</h1>
+    <h3 class="info2">Thai - небольшой салон тайского массажа и спа-центр. Массаж поможет насладиться здоровым образом жизни, расслабиться и почувствовать легкость. </h3>
+    <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="images/images/photo1.jpg" style="width:70%">
+</div>
+
+<div class="mySlides fade">
+  <img src="images/images/photo2.jpg" style="width:70%">
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+      <h1 id="Наши_специалисты" class="workers">Наши специалисты</h1>
+      <h3 class="workers2">Каждый из наших сотрудников является лицензированным массажистом</h3>
+      <p><img src="images/images/workers1.png" alt="" class="round1">
+      <img src="images/images/workers2.png" alt="" class="round2">
+      <img src="images/images/workers3.png" alt="" class="round3"></p>
+      <div class="employee1">
+          <p>Ева Чарина</p>
+      </div>
+      <div class="employee11">
+          <p>Квалифицированный специалист с 5-летним стажем работы</p>
+      </div>
+      <div class="employee2">
+          <p>Саломея</p>
+      </div>
+         <div class="employee21">
+          <p>Квалифицированный массажист с дипломом Медицинской Школы</p>
+      </div>
+      <div class="employee3">
+          <p>Марта Маурис</p>
+      </div>
+      <div class="employee31">
+          <p>Квалифицированный массажист с опытом работы четыре года</p>
+      </div>
+      <h1 id="Услуги" class="services">Услуги массажа</h1>
+      <h3 class="services2">Расслабление и обновление вашего тела</h3>
+      <p><img src="images/images/service1.png" alt="" class="serv1">
+      <img src="images/images/service2.jpg" alt="" class="serv2">
+      <img src="images/images/service3.jpg" alt="" class="serv3"></p>
+      <div class="serv11">
+          <p>Классический тайский массаж</p>
+      </div>
+      <div class="serv12">
+          <p>Расслабьтесь и позвольте мышцам достигнуть полного спокойствия</p>
+      </div>
+      <div class="serv13">
+          <p>60 минут — 2000₽</p>
+          <p>120 минут — 4000₽</p>
+      </div>
+      <div class="serv14button"><a href="#contacts">Забронировать</a></div>
+      <div class="serv21">
+          <p>Тайский массаж шеи</p>
+      </div>
+      <div class="serv22">
+          <p>Этот вид массажа фокусируется на увеличении потока кислорода и выводе токсинов из мышц.</p>
+      </div>
+      <div class="serv23">
+          <p>60 минут — 1450₽</p>
+          <p>120 минут — 2800₽</p>
+      </div>
+      <div class="serv24button"><a href="#contacts">Забронировать</a></div>
+      <div class="serv31">
+          <p>Массаж травяными мешочками</p>
+      </div>
+      <div class="serv32">
+          <p>Этот вид массажа уходит глубоко в ткани мышц и помогает снять боль.</p>
+      </div>
+      <div class="serv33">
+          <p>60 минут — 2200₽</p>
+          <p>120 минут — 4200₽</p>
+      </div>
+      <div  class="serv34button"><a href="#contacts">Забронировать</a></div>
+      <p><img src="images/images/service4.jpeg" alt="" class="serv4">
+      <img src="images/images/service5.png" alt="" class="serv5">
+      <img src="images/images/service6.jpeg" alt="" class="serv6"></p>
+      <div class="serv41">
+          <p>Масляный массаж</p>
+      </div>
+      <div class="serv42">
+          <p>Баланс и гармония. Мы используем эфирные масла, чтобы улучшить настроение и здоровье.</p>
+      </div>
+      <div class="serv43">
+          <p>60 минут — 2500₽</p>
+          <p>120 минут — 5000₽</p>
+      </div>
+      <div class="serv44button"><a href="#contacts">Забронировать</a></div>
+      <div class="serv51">
+          <p>Массаж горячими камнями</p>
+      </div>
+      <div class="serv52">
+          <p>Восстановите свое тело и расслабьтесь. Массажист кладет камни на ключевые точки на теле.</p>
+      </div>
+      <div class="serv53">
+          <p>60 минут — 2600₽</p>
+          <p>120 минут — 5200₽</p>
+      </div>
+      <div  class="serv54button"><a href="#contacts">Забронировать</a></div>
+      <div class="serv61">
+          <p>Массаж головы</p>
+      </div>
+      <div class="serv62">
+          <p>Оставьте напряжение и стресс, с массажем головы вас ждет полное расслабление.</p>
+      </div>
+      <div class="serv63">
+          <p>60 минут — 2000₽</p>
+          <p>120 минут — 4000₽</p>
+      </div>
+      <div class="serv64button"><a href="#contacts">Забронировать</a></div>
+<h1 id="contacts" class="connection">Свяжитесь с нами, чтобы забронировать массаж</h1>
+     <div class="phone">
+         <p>+1 123 456 78 90</p>
+      </div>
+        <div class="letter">
+         <p>hello@massage.com</p>
+      </div>
+        <div class="city">
+         <p>г. Санкт-Петербург, Воронежская улица, 18 </p>
+     </div>
+     <div class="hours">
+         <p>С понедельника по воскресенье, с 10:00 до 24:00</p>
+     </div>
+<div class="apps">
+    <p><a href="https://web.telegram.org/"><img src="images/images/telegram.webp" alt="" class="app1"></a>
+        <a href="https://investor.twitterinc.com/"><img src="images/images/twitter.webp" alt="" class="app2"></a>
+        <a href="https://vk.com/"><img src="images/images/vk.webp" alt="" class="app3"></a></p>
+      </div>
+  </body>
+</html>
